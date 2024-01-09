@@ -17,6 +17,8 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: yarn app test
         run: yarn test
+      - name: build time
+        run: yarn build
       - name: deploy aws s3
         uses: jakejarvis/s3-sync-action@master
         with:
