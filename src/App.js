@@ -12,6 +12,7 @@ function App() {
         <h5>commit 5</h5>
         <span>commit 6</span>
         <p>develop branch</p>
+        <button>button</button>
       </header>
       <Home />
     </div>

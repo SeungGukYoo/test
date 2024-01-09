@@ -6,7 +6,18 @@ on:
       - main
 
 jobs:
-  cicd:
+  just-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo this is cicd test 1
+      - uses: actions/checkout@v3
+        with:
+          ref: 'main'
+      - name: initialize project
+        run: yarn install --frozen-lockfile
+      - name: yarn app test
+        run: yarn test
+  ci_test_and_deploy_aws:
     runs-on: ubuntu-latest
     steps:
       - run: node -v
