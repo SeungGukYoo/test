@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "lint": "eslint --cache .",
-    "deploy": "yarn run build && aws s3 sync build/ s3://wanted-aws-self-study"
+    "deploy": "yarn run build &&  aws s3 sync build/ s3://wanted-aws-self-study --delete --profile default"
   },
   "eslintConfig": {
     "extends": [
