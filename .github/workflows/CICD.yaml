@@ -1,0 +1,13 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cicd:
+    runs-on: unbutu-latest
+    steps:
+      - run: node -v
+      - run: echo hello.world
