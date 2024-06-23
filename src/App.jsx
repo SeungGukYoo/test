@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>First init develop branch</h1>
+      <h1>Hello Main branch</h1>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
